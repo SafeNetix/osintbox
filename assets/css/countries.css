@@ -254,13 +254,12 @@ b {
   flex-direction: row;
   align-items: center;
   gap: 5px;
-}
-
-.tool-desc {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  text-align: left;
+  line-height: 2;
 }
 
 .tool-buttons {
@@ -348,6 +347,9 @@ b {
   .tool-btn {
     font-size: 14px;
   }
+  #footer p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -399,6 +401,19 @@ b {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
+  }
+
+  .tool-info {
+    text-align: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .tool-info,
+  .tool-btn {
+    font-size: 12px;
   }
 
   .tool-buttons {
