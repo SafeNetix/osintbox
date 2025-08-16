@@ -1,1 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: "Inter", sans-serif;
+  direction: ltr;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: #6c9;
+  text-decoration: none;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url("../img/stars.png") repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url("../img/twinkling.png") repeat top center;
+  animation: move-twink-back 200s linear infinite;
+  z-index: 1;
+}
+
+#content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+#header,
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  z-index: 3;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+#header i {
+  font-size: 40px;
+}
+
+#footer p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+#popupContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgb(10, 20, 40);
+  padding: 2rem 3rem 2rem 2rem;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 80%;
+  position: relative;
+}
+
+#popupContent p,
+#popupContent b {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+#popupContent img {
+  width: 120px;
+}
+
+#closePopup {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.map {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+#map {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+path {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 0.5;
+  cursor: pointer;
+  transition: fill 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+path:hover {
+  fill: #6c9;
+}
+
+.dragging {
+  cursor: grab;
+}
+
+@media (max-width: 1024px) {
+  header,
+  .map-container,
+  footer {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header,
+  .map-container,
+  footer {
+    padding: 2rem;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  #header i {
+    font-size: 30px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  #popupContent p,
+  #popupContent b {
+    font-size: 13px;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  #footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #footer p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
