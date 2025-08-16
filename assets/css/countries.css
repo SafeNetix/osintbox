@@ -230,12 +230,14 @@ b {
 }
 
 .tabcontent {
-  display: none;
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 20px;
   border: 1px solid #3d3d3d;
   border-radius: 15px;
   min-width: 200px;
+  gap: 20px;
 }
 
 .tool-item {
