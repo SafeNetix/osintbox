@@ -174,8 +174,8 @@ function touchOnBackgroundCircle(touch) {
 
 function navigateToCountry(event, d) {
   const countryLinks = {
-    Iran: "https://osintbox.ir/countries/iran",
-    "United States of America": "https://osintbox.ir/countries/usa",
+    Iran: "/countries/iran",
+    "United States of America": "/countries/usa",
   };
   const countryName = d.properties.name;
   const url = countryLinks[countryName];
