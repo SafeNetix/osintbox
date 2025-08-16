@@ -1,0 +1,24 @@
+{
+  "country": "Iran",
+  "last_update": "2025-06-11",
+  "tools": {
+    "social_media": [
+      {
+        "name": "Lifeweb",
+        "description": "Monitoring, observation and analysis of social media",
+        "link": "https://lifewebco.com",
+        "pricing": "paid",
+        "signup_required": true
+      }
+    ],
+    "government": [
+      {
+        "name": "RRK",
+        "description": "Official Gazette of the Islamic Republic of Iran",
+        "link": "https://rrk.ir",
+        "pricing": "free",
+        "signup_required": false
+      }
+    ]
+  }
+}

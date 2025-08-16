@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSINT Box | United States of America</title>
+    <meta
+      name="description"
+      content="A focused collection of OSINT tools related to United States of America, organized for quick access in open-source investigations."
+    />
+    <meta
+      name="keywords"
+      content="OSINT, Open Source Intelligence, OSINT tools, OSINT research, investigative tools, country-based OSINT tools"
+    />
+    <meta name="author" content="safenetix" />
+    <meta name="language" content="en" />
+    <meta property="og:title" content="OSINT Box | United States of America" />
+    <meta
+      property="og:description"
+      content="A comprehensive toolbox for OSINT research and investigations, with country-based tool categories for precise access."
+    />
+    <meta property="og:image" content="../../assets/img/og-image.jpg" />
+    <meta property="og:url" content="https://osintbox.ir" />
+    <meta
+      name="robots"
+      content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+    />
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon" />
+    <link href="../../assets/css/countries.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div id="header">
+          <a href="https://osintbox.ir">
+            <img src="../../assets/img/logo.png" class="logo" alt="osintbox" />
+          </a>
+          <i
+            class="fa-solid fa-circle-exclamation"
+            id="openPopup"
+            style="cursor: pointer"
+          ></i>
+        </div>
+      </header>
+      <div class="countries">
+        <div class="country">
+          <div class="country-flag">
+            <nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li><a href="https://osintbox.ir">Countries</a></li>
+                <li>United States of America</li>
+              </ul>
+            </nav>
+            <img src="../../assets/img/countries/usa.jpg" alt="USA flag" />
+          </div>
+          <div class="about-country">
+            <h1>United States of America</h1>
+            <p>
+              The United States of America, also known as the United States or
+              America, is a country located primarily in North America. It is a
+              federal republic of 50 states and the federal capital district of
+              Washington, D.C. The 48 contiguous states border Canada to the
+              north and Mexico to the south, with the state of Alaska forming a
+              semi-exclave in the northwest and the state of Hawaii spanning an
+              archipelago in Oceania. Indian country includes 574 federally
+              recognized tribes and 326 Indian reservations with tribal
+              sovereignty rights. The U.S. asserts sovereignty over five major
+              island territories and various uninhabited islands in the Pacific
+              Ocean and the Caribbean. It is an ecologically megadiverse
+              country, with the world's third-largest land area and
+              third-largest population, exceeding 340 million.
+            </p>
+          </div>
+        </div>
+        <div class="tools">
+          <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h2>
+          <div class="tab-container">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openTab(event, 'tab1')"
+                id="defaultOpen"
+              >
+                <i class="fa-solid fa-hashtag"></i> Social Media
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'tab2')">
+                <i class="fa-solid fa-building"></i> Official and Government
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'tab3')">
+                <i class="fa-solid fa-wrench"></i> Technical and Analytical
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'tab4')">
+                <i class="fa-solid fa-earth-americas"></i> Geolocation and
+                Mapping
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'tab5')">
+                <i class="fa-solid fa-database"></i> Data Leak and Breach
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'tab6')">
+                <i class="fa-solid fa-image"></i> File and Media
+              </button>
+            </div>
+            <div id="tab1" class="tabcontent">
+              <h3>Social Media Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+            <div id="tab2" class="tabcontent">
+              <h3>Official and Government Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+            <div id="tab3" class="tabcontent">
+              <h3>Technical and Analytical Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+            <div id="tab4" class="tabcontent">
+              <h3>Geolocation and Mapping Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+            <div id="tab5" class="tabcontent">
+              <h3>Data Leak and Breach Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+            <div id="tab6" class="tabcontent">
+              <h3>File and Media Tools</h3>
+              <div class="tools-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footer">
+          <p>
+            Powerd By
+            <a href="https://safenetix.ir" target="_blank">SafeNetix</a>
+            <a href="https://github.com/SafeNetix/osintbox" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </p>
+          <p>© 2025. All rights reserved.</p>
+        </div>
+      </footer>
+      <div id="popup" style="display: none">
+        <div id="popupContent">
+          <span id="closePopup" style="cursor: pointer">&times;</span>
+          <img src="../../assets/img/logo.png" alt="OSINT Box" />
+          <p>
+            OSINT Box is a specialized toolbox in the field of OSINT, organizing
+            tools by country to provide more precise and targeted access. To use
+            OSINT Box, simply select your desired country from the map, and you
+            will be directed to a page featuring tools related to that specific
+            country.
+          </p>
+          <b>Last update of this country: —</b>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/js/countries.js"></script>
+  </body>
+</html>
