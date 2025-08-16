@@ -343,6 +343,11 @@ b {
   .tab i {
     font-size: 15px;
   }
+
+  .tool-info,
+  .tool-btn {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -388,6 +393,17 @@ b {
 
   .tabcontent {
     width: 100%;
+  }
+
+  .tool-item {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .tool-buttons {
+    width: 100%;
+    justify-content: center;
   }
 
   #popupContent p,
