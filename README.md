@@ -1,30 +1,53 @@
-# osintbox
-Comprehensive OSINT Toolbox
+# OSINT Box
+Comprehensive Country-Based OSINT Toolbox
 
-**OSINT Box** is an open-source collection of OSINT (Open Source Intelligence) tools and resources, organized by country. The goal of this project is to provide researchers, journalists, security analysts, and anyone interested in OSINT with easy access to useful and relevant tools specific to each country.
+**OSINT Box** is an open-source, country-focused collection of OSINT (Open Source Intelligence) tools and resources. The goal of this project is to provide researchers, journalists, security analysts, and enthusiasts with structured and easy access to OSINT tools specific to each country, with additional information about tool pricing and registration requirements.
+
+---
 
 ## Project Goals
-- Collect and categorize OSINT tools for different countries.
-- Provide a resource for people working in security, journalism, research, and law enforcement.
-- Enable open collaboration for adding and improving OSINT tools.
+- Collect, categorize, and maintain OSINT tools for different countries.
+- Display detailed tool information including:
+  - Name
+  - Short description
+  - Link
+  - Pricing (Free, Paid, Freemium)
+  - Signup requirement (Mandatory or Optional)
+- Provide a user-friendly interface with categorized tabs and clear tool indicators.
+- Encourage open collaboration to expand and improve the toolbox.
+
+---
 
 ## Project Structure
-- `/countries/`: Contains markdown files for each country with a list of tools and resources specific to that country.
-- `/tools/`: Contains markdown files categorizing general OSINT tools (e.g., web scraping, social media analysis, public records, etc.).
+- `/countries/`: Each country has its own folder containing an `index.html` and a JSON file with tools data.
+  - Example: `countries/iran/iran.json`
+- `/tools/`: General OSINT tools categorized by type (e.g., Web Scraping, Social Media Analysis, Public Records, etc.).
+- `/assets/`: Contains CSS, JS, images, and other frontend assets.
 
-## How to Contribute
-We welcome contributions! If you want to help improve the project, follow these steps:
-1. Fork the repository.
-2. Add or update tools for your country in the appropriate file under `/countries/`.
-3. Make sure the tools are described with a name, short description, and a link.
-4. Create a pull request with your changes.
+**JSON Tool Structure Example:**
 
-For detailed instructions, see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Supported Countries
-Currently, we support tools and resources for the following countries (with more being added regularly):
-- Iran
-- USA
-
-## License
-The code in this repository is licensed under the MIT License. The content (e.g., country lists, resources) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+```json
+{
+  "country": "Iran",
+  "last_update": "2025-06-11",
+  "tools": {
+    "social_media": [
+      {
+        "name": "Lifeweb",
+        "description": "Telegram analytics tool",
+        "link": "https://lifewebco.com",
+        "pricing": "paid",
+        "signup_required": true
+      }
+    ],
+    "government": [
+      {
+        "name": "RRK",
+        "description": "Official Gazette of the Islamic Republic of Iran",
+        "link": "https://rrk.ir",
+        "pricing": "free",
+        "signup_required": false
+      }
+    ]
+  }
+}
