@@ -21,7 +21,7 @@ Comprehensive Country-Based OSINT Toolbox
 ## Project Structure
 - `/countries/`: Each country has its own folder containing an `index.html` and a JSON file with tools data.
   - Example: `countries/iran/iran.json`
-- `/tools/`: General OSINT tools categorized by type (e.g., Web Scraping, Social Media Analysis, Public Records, etc.).
+- `/tools/`: General OSINT tools categorized by type (e.g., Web Scraping, Social Media Analysis, Public Records, etc.) – **coming soon!**
 - `/assets/`: Contains CSS, JS, images, and other frontend assets.
 
 **JSON Tool Structure Example:**
@@ -34,7 +34,7 @@ Comprehensive Country-Based OSINT Toolbox
     "social_media": [
       {
         "name": "Lifeweb",
-        "description": "Monitoring, observation and analysis of social media",
+        "description": "Telegram analytics tool",
         "link": "https://lifewebco.com",
         "pricing": "paid",
         "signup_required": true
