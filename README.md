@@ -11,8 +11,8 @@ Comprehensive Country-Based OSINT Toolbox
   - Name
   - Short description
   - Link
-  - Pricing (Free, Paid, Freemium)
-  - Signup requirement (Mandatory or Optional)
+  - Pricing (Free or Paid)
+  - Signup requirement (True or flase)
 - Provide a user-friendly interface with categorized tabs and clear tool indicators.
 - Encourage open collaboration to expand and improve the toolbox.
 
@@ -34,7 +34,7 @@ Comprehensive Country-Based OSINT Toolbox
     "social_media": [
       {
         "name": "Lifeweb",
-        "description": "Telegram analytics tool",
+        "description": "Monitoring, observation and analysis of social media",
         "link": "https://lifewebco.com",
         "pricing": "paid",
         "signup_required": true
