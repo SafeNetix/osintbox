@@ -329,7 +329,7 @@ b {
   }
 
   .about-country p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .tools h2 {
@@ -337,7 +337,7 @@ b {
   }
 
   .tab button {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tab i {
@@ -371,10 +371,6 @@ b {
   .country-flag,
   .about-country {
     width: 100%;
-  }
-
-  .about-country p {
-    font-size: 10px;
   }
 
   .tab-container {
