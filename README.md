@@ -12,7 +12,7 @@ Comprehensive Country-Based OSINT Toolbox
   - Short description
   - Link
   - Pricing (Free or Paid)
-  - Signup requirement (True or flase)
+  - Signup requirement (Signup Required or No Signup)
 - Provide a user-friendly interface with categorized tabs and clear tool indicators.
 - Encourage open collaboration to expand and improve the toolbox.
 
