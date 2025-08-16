@@ -34,7 +34,7 @@ Comprehensive Country-Based OSINT Toolbox
     "social_media": [
       {
         "name": "Lifeweb",
-        "description": "Telegram analytics tool",
+        "description": "Monitoring, observation and analysis of social media",
         "link": "https://lifewebco.com",
         "pricing": "paid",
         "signup_required": true
