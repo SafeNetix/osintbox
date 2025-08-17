@@ -52,16 +52,24 @@ async function loadTools(country) {
         let tools = data.tools[cat];
 
         sortContainer.innerHTML = `
-          <label><input type="checkbox" class="filter-checkbox" value="free" checked> Free</label>
-          <label><input type="checkbox" class="filter-checkbox" value="paid" checked> Paid</label>
-          <label><input type="checkbox" class="filter-checkbox" value="signup" checked> Signup Required</label>
-          <label><input type="checkbox" class="filter-checkbox" value="no-signup" checked> No Signup</label>
+          <label><input type="checkbox" class="filter-checkbox" value="free" checked><span>Free</span></label>
+          <label><input type="checkbox" class="filter-checkbox" value="paid" checked><span>Paid</span></label>
+          <label><input type="checkbox" class="filter-checkbox" value="signup" checked><span>Signup Required</span></label>
+          <label><input type="checkbox" class="filter-checkbox" value="no-signup" checked><span>No Signup</span></label>
         `;
 
         const renderTools = () => {
           const checkedFilters = Array.from(
             sortContainer.querySelectorAll(".filter-checkbox:checked")
           ).map((cb) => cb.value);
+
+          sortContainer.querySelectorAll(".filter-checkbox").forEach((cb) => {
+            if (cb.checked) {
+              cb.classList.add("active-checkbox");
+            } else {
+              cb.classList.remove("active-checkbox");
+            }
+          });
 
           const filteredTools = tools.filter((tool) => {
             const pricingMatch =
