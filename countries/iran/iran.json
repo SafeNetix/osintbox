@@ -2,7 +2,7 @@
   "country": "Iran",
   "last_update": "2025-06-11",
   "tools": {
-    "social_media": [
+    "government": [
       {
         "name": "Lifeweb",
         "description": "Monitoring, observation and analysis of social media",
@@ -11,7 +11,7 @@
         "signup_required": true
       }
     ],
-    "government": [
+    "financial": [
       {
         "name": "RRK",
         "description": "Official Gazette of the Islamic Republic of Iran",
