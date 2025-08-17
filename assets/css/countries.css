@@ -200,9 +200,9 @@ b {
 .tab {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 360px;
   gap: 20px;
-  min-width: 300px;
+  min-width: 360px;
 }
 
 .tab button {

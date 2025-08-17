@@ -45,7 +45,7 @@ async function loadTools(country) {
 
     for (let cat in categories) {
       const tabId = categories[cat];
-      const container = document.querySelector(`#${tabId}`);
+      const container = document.querySelector(`#${tabId} .tools-list`);
 
       if (data.tools[cat] && data.tools[cat].length > 0) {
         let html = "";
