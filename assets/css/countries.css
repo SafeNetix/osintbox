@@ -249,13 +249,61 @@ b {
 .tools-title {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .tools-title h3,
 p {
   padding: 0;
   margin: 0;
+}
+
+.tools-title h3 {
+  line-height: 1.5;
+}
+
+.tools-title p {
+  line-height: 2;
+  font-size: 14px;
+}
+
+.tools-sort {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tools-sort span {
+  display: flex;
+  align-items: center;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.tools-sort span:hover {
+  background-color: #5061ff;
+  color: #fff;
+}
+
+.tools-sort input[type="checkbox"] {
+  display: none;
+}
+
+.tools-sort input[type="checkbox"]:checked + span {
+  background-color: #5061ff;
+  color: #fff;
+}
+
+.tools-sort input[type="checkbox"]:checked + span:hover {
+  background-color: #1e2350;
 }
 
 .tool-item {
@@ -406,6 +454,7 @@ p {
 
   .tab {
     width: 100%;
+    min-width: 300px;
   }
 
   .tab button {
@@ -421,6 +470,15 @@ p {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
+  }
+
+  .tools-option {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tools-sort {
+    justify-content: start;
   }
 
   .tool-info {
