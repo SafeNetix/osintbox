@@ -27,6 +27,13 @@ Comprehensive Country-Based OSINT Toolbox
 - `/tools/`: General OSINT tools categorized by type (e.g., Web Scraping, Social Media Analysis, Public Records, etc.) – **coming soon!**
 - `/assets/`: Contains CSS, JS, images, and other frontend assets.
 
+## Available Countries
+
+Currently, the following countries are included in the project:
+
+- **Iran**
+- **United States**
+
 **JSON Tool Structure Example:**
 
 ```json
