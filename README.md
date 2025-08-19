@@ -1,4 +1,5 @@
 # OSINT Box
+
 Comprehensive Country-Based OSINT Toolbox
 
 **OSINT Box** is an open-source, country-focused collection of OSINT (Open Source Intelligence) tools and resources. The goal of this project is to provide researchers, journalists, security analysts, and enthusiasts with structured and easy access to OSINT tools specific to each country, with additional information about tool pricing and registration requirements.
@@ -6,6 +7,7 @@ Comprehensive Country-Based OSINT Toolbox
 ---
 
 ## Project Goals
+
 - Collect, categorize, and maintain OSINT tools for different countries.
 - Display detailed tool information including:
   - Name
@@ -19,6 +21,7 @@ Comprehensive Country-Based OSINT Toolbox
 ---
 
 ## Project Structure
+
 - `/countries/`: Each country has its own folder containing an `index.html` and a JSON file with tools data.
   - Example: `countries/iran/iran.json`
 - `/tools/`: General OSINT tools categorized by type (e.g., Web Scraping, Social Media Analysis, Public Records, etc.) – **coming soon!**
@@ -29,25 +32,26 @@ Comprehensive Country-Based OSINT Toolbox
 ```json
 {
   "country": "Iran",
-  "last_update": "2025-06-11",
+  "last_update": "2025-08-19",
   "tools": {
-    "social_media": [
-      {
-        "name": "Lifeweb",
-        "description": "Monitoring, observation and analysis of social media",
-        "link": "https://lifewebco.com",
-        "pricing": "paid",
-        "signup_required": true
-      }
-    ],
     "government": [
       {
-        "name": "RRK",
-        "description": "Official Gazette of the Islamic Republic of Iran",
-        "link": "https://rrk.ir",
+        "name": "Iran Open Data Portal",
+        "description": "National portal for open government datasets and catalog (in Persian and English)",
+        "link": "https://data.gov.ir",
+        "pricing": "free",
+        "signup_required": false
+      }
+    ],
+    "financial": [
+      {
+        "name": "Tehran Stock Exchange (TSE)",
+        "description": "Iran’s largest stock market providing trading data and listings",
+        "link": "https://tse.ir",
         "pricing": "free",
         "signup_required": false
       }
     ]
   }
 }
+```

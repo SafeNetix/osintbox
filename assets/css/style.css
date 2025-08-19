@@ -28,6 +28,11 @@ a {
   }
 }
 
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .stars,
 .twinkling {
   position: fixed;

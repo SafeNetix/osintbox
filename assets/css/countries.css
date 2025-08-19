@@ -237,7 +237,26 @@ b {
   border: 1px solid #3d3d3d;
   border-radius: 15px;
   min-width: 200px;
+  min-height: 430px;
+  height: 430px;
+  overflow: auto;
   gap: 20px;
+}
+
+.tabcontent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tabcontent::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-end-end-radius: 15px;
+  border-start-end-radius: 15px;
+}
+
+.tabcontent::-webkit-scrollbar-track {
+  background: #dbdbdb;
+  border-end-end-radius: 15px;
+  border-start-end-radius: 15px;
 }
 
 .tools-option {
@@ -304,6 +323,12 @@ p {
 
 .tools-sort input[type="checkbox"]:checked + span:hover {
   background-color: #1e2350;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .tool-item {
@@ -409,6 +434,11 @@ p {
 
   .tab i {
     font-size: 15px;
+  }
+
+  .tabcontent {
+    min-height: 375px;
+    height: 375px;
   }
 
   .tool-info,

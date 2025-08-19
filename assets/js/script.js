@@ -25,6 +25,7 @@ svg
 let currentScale = width / 2;
 let pinchStartDistance = null;
 let pinchStartScale = currentScale;
+let dragged = false;
 
 d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json").then(
   (world) => {
@@ -43,12 +44,15 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json").then(
     let startPos = [0, 0];
 
     svg.on("mousedown", function (event) {
+      dragged = false;
       dragging = true;
       rotate = projection.rotate();
       startPos = [event.clientX, event.clientY];
       svg.classed("dragging", true);
+      document.body.style.userSelect = "none";
       window.onmousemove = function (event) {
         if (!dragging) return;
+        dragged = true;
         const dx = event.clientX - startPos[0];
         const dy = startPos[1] - event.clientY;
         projection.rotate([rotate[0] + dx * 0.1, rotate[1] + dy * 0.1]);
@@ -60,12 +64,14 @@ d3.json("https://unpkg.com/world-atlas@2.0.2/countries-110m.json").then(
       dragging = false;
       window.onmousemove = null;
       svg.classed("dragging", false);
+      document.body.style.userSelect = "";
     });
 
     svg.on("mouseleave", function () {
       dragging = false;
       window.onmousemove = null;
       svg.classed("dragging", false);
+      document.body.style.userSelect = "";
     });
 
     svg.on("touchstart", function (event) {
@@ -173,6 +179,7 @@ function touchOnBackgroundCircle(touch) {
 }
 
 function navigateToCountry(event, d) {
+  if (dragged) return;
   const countryLinks = {
     Iran: "./countries/iran/",
     "United States of America": "./countries/usa/",
@@ -213,4 +220,8 @@ document.getElementById("popup").addEventListener("click", function (e) {
   if (e.target === this) {
     this.style.display = "none";
   }
+});
+
+document.querySelectorAll(".locked-img").forEach((img) => {
+  img.addEventListener("dragstart", (e) => e.preventDefault());
 });

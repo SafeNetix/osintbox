@@ -1,21 +1,35 @@
 {
   "country": "Iran",
-  "last_update": "2025-06-11",
+  "last_update": "2025-08-19",
   "tools": {
     "government": [
       {
-        "name": "Lifeweb",
-        "description": "Monitoring, observation and analysis of social media",
-        "link": "https://lifewebco.com",
-        "pricing": "paid",
-        "signup_required": true
+        "name": "Iran Open Data Portal",
+        "description": "National portal for open government datasets and catalog (in Persian and English)",
+        "link": "https://data.gov.ir",
+        "pricing": "free",
+        "signup_required": false
+      },
+      {
+        "name": "Iran Open Data Center (IOD)",
+        "description": "A pioneer platform providing access to official government public data and statistics",
+        "link": "https://iranopendata.org/en/",
+        "pricing": "free",
+        "signup_required": false
       }
     ],
     "financial": [
       {
-        "name": "RRK",
-        "description": "Official Gazette of the Islamic Republic of Iran",
-        "link": "https://rrk.ir",
+        "name": "Tehran Stock Exchange (TSE)",
+        "description": "Iran’s largest stock market providing trading data and listings",
+        "link": "https://tse.ir",
+        "pricing": "free",
+        "signup_required": false
+      },
+      {
+        "name": "Central Securities Depository of Iran (CSDI)",
+        "description": "Provides post-trade services: clearing, settlement and securities registration for Iran’s capital market",
+        "link": "https://en.csdiran.ir",
         "pricing": "free",
         "signup_required": false
       }
