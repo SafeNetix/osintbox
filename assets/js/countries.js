@@ -139,3 +139,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("defaultOpen").click();
 });
+
+const tooltip = document.createElement("div");
+tooltip.className = "tool-tooltip";
+document.body.appendChild(tooltip);
+
+document.querySelectorAll(".tool-info").forEach((el) => {
+  el.addEventListener("mouseenter", (e) => {
+    tooltip.textContent = el.textContent.trim();
+    tooltip.style.opacity = "1";
+  });
+
+  el.addEventListener("mousemove", (e) => {
+    tooltip.style.left = e.pageX + 15 + "px";
+    tooltip.style.top = e.pageY + 15 + "px";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    tooltip.style.opacity = "0";
+  });
+});
