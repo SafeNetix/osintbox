@@ -208,7 +208,7 @@ b {
 .tab button {
   display: flex;
   align-items: center;
-  background: linear-gradient(145deg, #0f0f0f, #444245);
+  background: #313131;
   border: none;
   border-radius: 15px;
   color: #c0c0c0;
@@ -403,6 +403,10 @@ p {
 #footer p {
   font-size: 15px;
   font-weight: 500;
+}
+
+.fa-github {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {

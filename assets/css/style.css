@@ -184,6 +184,10 @@ path:hover {
   cursor: grab;
 }
 
+.fa-github {
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   header,
   .map-container,
