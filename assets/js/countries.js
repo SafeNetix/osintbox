@@ -28,11 +28,26 @@ function activateTooltips() {
   document.querySelectorAll(".tool-info").forEach((info) => {
     info.addEventListener("mouseenter", () => {
       tooltip.textContent = info.innerText.trim();
+      tooltip.style.visibility = "visible";
 
       const rect = info.getBoundingClientRect();
 
-      tooltip.style.left = rect.left + "px";
-      tooltip.style.top = rect.bottom + 5 + "px";
+      let left = rect.left;
+      let top = rect.bottom + 10;
+
+      const tooltipWidth = tooltip.offsetWidth;
+      const windowWidth = window.innerWidth;
+
+      if (left + tooltipWidth > windowWidth - 10) {
+        left = windowWidth - tooltipWidth - 10;
+      }
+
+      if (left < 10) {
+        left = 10;
+      }
+
+      tooltip.style.left = left + "px";
+      tooltip.style.top = top + "px";
 
       tooltip.style.opacity = "1";
       tooltip.style.transform = "translateY(0)";
@@ -41,6 +56,7 @@ function activateTooltips() {
     info.addEventListener("mouseleave", () => {
       tooltip.style.opacity = "0";
       tooltip.style.transform = "translateY(-5px)";
+      tooltip.style.visibility = "hidden";
     });
   });
 }
