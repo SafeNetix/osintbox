@@ -111,6 +111,9 @@ async function loadTools(country) {
           });
 
           container.innerHTML = html || "<p>No tools available.</p>";
+          container.querySelectorAll(".tool-info").forEach((info) => {
+            info.setAttribute("title", info.innerText.trim());
+          });
         };
 
         renderTools();
@@ -138,9 +141,4 @@ document.addEventListener("DOMContentLoaded", () => {
   loadTools(country);
 
   document.getElementById("defaultOpen").click();
-});
-
-document.querySelectorAll(".tool-info").forEach((info) => {
-  const fullText = info.innerText.trim();
-  info.setAttribute("title", fullText);
 });
