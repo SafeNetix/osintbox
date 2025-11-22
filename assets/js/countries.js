@@ -32,10 +32,12 @@ function activateTooltips() {
 
       const rect = info.getBoundingClientRect();
 
+      tooltip.style.width = rect.width + "px";
+
       let left = rect.left;
       let top = rect.bottom + 10;
 
-      const tooltipWidth = tooltip.offsetWidth;
+      const tooltipWidth = rect.width;
       const windowWidth = window.innerWidth;
 
       if (left + tooltipWidth > windowWidth - 10) {
