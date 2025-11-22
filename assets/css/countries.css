@@ -200,9 +200,9 @@ b {
 .tab {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 300px;
   gap: 20px;
-  min-width: 360px;
+  min-width: 300px;
 }
 
 .tab button {
@@ -212,7 +212,7 @@ b {
   border: none;
   border-radius: 15px;
   color: #c0c0c0;
-  font-size: 18px;
+  font-size: 15px;
   padding: 15px;
   text-align: left;
   cursor: pointer;
@@ -263,6 +263,7 @@ b {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .tools-title {
@@ -334,6 +335,7 @@ p {
 .tool-item {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px 10px 20px;
@@ -343,12 +345,14 @@ p {
 }
 
 .tool-info {
-  display: -webkit-box;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  display: -webkit-box;
+  font-size: 15px;
   line-height: 2;
-  pointer-events: auto;
 }
 
 .tool-info span {
@@ -378,16 +382,15 @@ p {
 
 .tool-buttons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
-  align-items: center;
   gap: 5px;
-  margin: 0;
-  padding: 0;
+  flex-shrink: 0;
 }
 
 .tool-btn {
   white-space: nowrap;
+  font-size: 14px;
 }
 
 .paid {
@@ -453,6 +456,14 @@ p {
     font-size: 18px;
   }
 
+  .tab-container {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
   .tab button {
     font-size: 14px;
   }
@@ -462,14 +473,10 @@ p {
   }
 
   .tabcontent {
-    min-height: 375px;
-    height: 375px;
+    width: 100%;
+    max-height: 500px;
   }
 
-  .tool-info,
-  .tool-btn {
-    font-size: 14px;
-  }
   #footer p {
     font-size: 14px;
   }
@@ -503,22 +510,9 @@ p {
     width: 100%;
   }
 
-  .tab-container {
-    flex-direction: column;
-  }
-
-  .tab {
-    width: 100%;
-    min-width: 300px;
-  }
-
   .tab button {
     flex: 1;
     white-space: nowrap;
-  }
-
-  .tabcontent {
-    width: 100%;
   }
 
   .tool-item {
@@ -552,6 +546,7 @@ p {
   .tool-buttons {
     width: 100%;
     justify-content: center;
+    gap: 10px;
   }
 
   #popupContent p,
