@@ -28,13 +28,16 @@ function activateTooltips() {
   document.querySelectorAll(".tool-info").forEach((info) => {
     info.addEventListener("mouseenter", () => {
       tooltip.textContent = info.innerText.trim();
+
+      const rect = info.getBoundingClientRect();
+
+      tooltip.style.left = rect.left + "px";
+      tooltip.style.top = rect.bottom + 5 + "px";
+
       tooltip.style.opacity = "1";
       tooltip.style.transform = "translateY(0)";
     });
-    info.addEventListener("mousemove", (e) => {
-      tooltip.style.left = e.pageX + 12 + "px";
-      tooltip.style.top = e.pageY + 12 + "px";
-    });
+
     info.addEventListener("mouseleave", () => {
       tooltip.style.opacity = "0";
       tooltip.style.transform = "translateY(-5px)";
