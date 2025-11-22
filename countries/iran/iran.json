@@ -39,28 +39,28 @@
         "name": "Statistical Center of Iran (SCI)",
         "description": "Provides demographic, social, and economic data including censuses, population indices, and educational statistics.",
         "link": "https://www.amar.org.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Institute for Humanities and Cultural Studies",
         "description": "Offers research articles, theses, and reports in the fields of humanities and social sciences.",
         "link": "https://www.iichs.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "National Library and Archives of Iran",
         "description": "Digital access to books, journals, manuscripts, and cultural documents of Iran.",
         "link": "https://www.nlai.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "Research Center of the Iranian Parliament",
         "description": "Publishes social and cultural research reports, policy analyses, and decision-support data.",
         "link": "https://rc.majlis.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       }
     ],
@@ -69,35 +69,35 @@
         "name": "IranDoc",
         "description": "Iranian research institute platform providing access to theses, dissertations, and academic publications.",
         "link": "https://www.irandoc.ac.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "SID (Scientific Information Database)",
         "description": "Database of Iranian scientific articles and journals, indexed by topic and discipline.",
         "link": "https://www.sid.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "Magiran",
         "description": "Digital archive of Iranian journals and newspapers, providing access to full-text issues.",
         "link": "https://www.magiran.com",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "Noormags",
         "description": "Database of Iranian academic, research, and cultural journals, offering full-text access.",
         "link": "https://www.noormags.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "Civilica",
         "description": "Platform providing access to papers from Iranian conferences and national/international scientific events.",
         "link": "https://www.civilica.com",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       }
     ],
@@ -113,7 +113,7 @@
         "name": "Rasmio",
         "description": "An open‑data business‑registry platform in Iran that provides company verification, official gazette‑based data, and business‑relationship analytics.",
         "link": "https://rasmio.com/",
-        "pricing": "free / freemium",
+        "pricing": "free / premium",
         "signup_required": true
       },
       {
@@ -129,21 +129,21 @@
         "name": "Official Gazette of Iran",
         "description": "Publishes company establishment, changes, trademark registrations, and other legal announcements.",
         "link": "https://www.rrk.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Rasmio",
         "description": "Open-data business platform offering company verification, official gazette-based data, and business relationship analytics.",
         "link": "https://rasmio.com",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": true
       },
       {
         "name": "Municipal Property Portals (e.g., Tehran Municipality)",
         "description": "Provides urban property information, ownership records, and municipal real estate data.",
         "link": "https://www.tehran.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       }
     ]
