@@ -47,21 +47,21 @@
         "description": "Offers research articles, theses, and reports in the fields of humanities and social sciences.",
         "link": "https://www.iichs.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "National Library and Archives of Iran",
         "description": "Digital access to books, journals, manuscripts, and cultural documents of Iran.",
         "link": "https://www.nlai.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "Research Center of the Iranian Parliament",
         "description": "Publishes social and cultural research reports, policy analyses, and decision-support data.",
         "link": "https://rc.majlis.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       }
     ],
     "research": [
@@ -70,35 +70,35 @@
         "description": "Iranian research institute platform providing access to theses, dissertations, and academic publications.",
         "link": "https://www.irandoc.ac.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "SID (Scientific Information Database)",
         "description": "Database of Iranian scientific articles and journals, indexed by topic and discipline.",
         "link": "https://www.sid.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "Magiran",
         "description": "Digital archive of Iranian journals and newspapers, providing access to full-text issues.",
         "link": "https://www.magiran.com",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "Noormags",
         "description": "Database of Iranian academic, research, and cultural journals, offering full-text access.",
         "link": "https://www.noormags.ir",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       },
       {
         "name": "Civilica",
         "description": "Platform providing access to papers from Iranian conferences and national/international scientific events.",
         "link": "https://www.civilica.com",
         "pricing": "free",
-        "signup_required": true
+        "signup_required": false
       }
     ],
     "judicial": [
@@ -136,7 +136,7 @@
         "name": "Rasmio",
         "description": "Open-data business platform offering company verification, official gazette-based data, and business relationship analytics.",
         "link": "https://rasmio.com",
-        "pricing": "free",
+        "pricing": "free / premium",
         "signup_required": true
       },
       {
