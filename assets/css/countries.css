@@ -355,6 +355,24 @@ p {
   pointer-events: none;
 }
 
+.tool-tooltip {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 99999;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
 .tool-buttons {
   display: flex;
   flex-direction: row;

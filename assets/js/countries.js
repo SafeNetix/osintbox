@@ -7,26 +7,39 @@ document.getElementById("closePopup").addEventListener("click", function () {
 });
 
 document.getElementById("popup").addEventListener("click", function (e) {
-  if (e.target === this) {
-    this.style.display = "none";
-  }
+  if (e.target === this) this.style.display = "none";
 });
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
-
   tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
+  for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
   tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
-  }
-
+  for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.classList.add("active");
+}
+
+const tooltip = document.createElement("div");
+tooltip.className = "tool-tooltip";
+document.body.appendChild(tooltip);
+
+function activateTooltips() {
+  document.querySelectorAll(".tool-info").forEach((info) => {
+    info.addEventListener("mouseenter", () => {
+      tooltip.textContent = info.innerText.trim();
+      tooltip.style.opacity = "1";
+      tooltip.style.transform = "translateY(0)";
+    });
+    info.addEventListener("mousemove", (e) => {
+      tooltip.style.left = e.pageX + 12 + "px";
+      tooltip.style.top = e.pageY + 12 + "px";
+    });
+    info.addEventListener("mouseleave", () => {
+      tooltip.style.opacity = "0";
+      tooltip.style.transform = "translateY(-5px)";
+    });
+  });
 }
 
 async function loadTools(country) {
@@ -64,11 +77,8 @@ async function loadTools(country) {
           ).map((cb) => cb.value);
 
           sortContainer.querySelectorAll(".filter-checkbox").forEach((cb) => {
-            if (cb.checked) {
-              cb.classList.add("active-checkbox");
-            } else {
-              cb.classList.remove("active-checkbox");
-            }
+            if (cb.checked) cb.classList.add("active-checkbox");
+            else cb.classList.remove("active-checkbox");
           });
 
           const filteredTools = tools.filter((tool) => {
@@ -87,7 +97,6 @@ async function loadTools(country) {
             const signupClass = tool.signup_required
               ? "signup-required"
               : "no-signup";
-
             const pricingText = tool.pricing
               ? tool.pricing.charAt(0).toUpperCase() + tool.pricing.slice(1)
               : "Unknown";
@@ -111,9 +120,7 @@ async function loadTools(country) {
           });
 
           container.innerHTML = html || "<p>No tools available.</p>";
-          container.querySelectorAll(".tool-info").forEach((info) => {
-            info.setAttribute("title", info.innerText.trim());
-          });
+          activateTooltips();
         };
 
         renderTools();
@@ -139,6 +146,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
   const country = path.split("/").slice(-2, -1)[0];
   loadTools(country);
-
   document.getElementById("defaultOpen").click();
 });
