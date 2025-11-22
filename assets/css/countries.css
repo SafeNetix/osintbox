@@ -343,16 +343,16 @@ p {
 }
 
 .tool-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  text-align: left;
+  overflow: hidden;
   line-height: 2;
+  pointer-events: auto;
+}
+
+.tool-info span {
+  pointer-events: none;
 }
 
 .tool-buttons {
