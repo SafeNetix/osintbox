@@ -47,10 +47,6 @@ footer,
   gap: 15px;
 }
 
-header {
-  margin-top: 1rem;
-}
-
 #header,
 #footer,
 .tools {
@@ -118,6 +114,7 @@ b {
   max-width: 1400px;
   align-items: end;
   justify-content: end;
+  padding-top: 0;
 }
 
 .country-flag,
@@ -437,7 +434,7 @@ p {
   header,
   .countries,
   footer {
-    padding: 2rem 3rem;
+    padding: 2rem;
   }
 
   .breadcrumb {
@@ -483,12 +480,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  header,
-  .countries,
-  footer {
-    padding: 2rem;
-  }
-
   header {
     margin-top: 0;
   }
