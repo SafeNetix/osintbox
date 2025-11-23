@@ -20,7 +20,7 @@ svg
   .attr("cx", width / 2)
   .attr("cy", height / 2)
   .attr("r", width / 2)
-  .attr("fill", "#313131");
+  .attr("fill", "#132c33");
 
 let currentScale = width / 2;
 let pinchStartDistance = null;
