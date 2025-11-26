@@ -23,6 +23,27 @@
         "link": "https://my.isaar.ir/service/%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D8%A7%DB%8C%D8%AB%D8%A7%D8%B1%DA%AF%D8%B1%20%DB%8C%D8%A7%20%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87",
         "pricing": "Free",
         "signup_required": true
+      },
+      {
+        "name": "ENamad Verification Service",
+        "description": "Official platform for verifying the e-trust symbol (Enamad) of Iranian online stores.",
+        "link": "https://enamad.ir/",
+        "pricing": "Free",
+        "signup_required": false
+      },
+      {
+        "name": "HAMTA Mobile Verification",
+        "description": "Official platform for verifying the authenticity of mobile phones and ensuring they are not smuggled in Iran.",
+        "link": "https://hamta.ntsw.ir/Account/Login?ReturnUrl=%2F",
+        "pricing": "Free",
+        "signup_required": true
+      },
+      {
+        "name": "Exit Ban Inquiry",
+        "description": "Official platform for verifying exit bans imposed on individuals in Iran.",
+        "link": "https://my.ssaa.ir/portal/executive/inquery-exitban",
+        "pricing": "Free",
+        "signup_required": false
       }
     ],
     "financial": [
@@ -38,6 +59,27 @@
         "description": "Provides post-trade services: clearing, settlement and securities registration for Iran’s capital market",
         "link": "https://en.csdiran.ir",
         "pricing": "free",
+        "signup_required": false
+      },
+      {
+        "name": "VAT Registration Verification",
+        "description": "Official platform for verifying Value Added Tax (VAT) taxpayers who have been registered in Iran.",
+        "link": "https://www.evat.ir/frmNewvalidationofregistration.aspx",
+        "pricing": "Free",
+        "signup_required": false
+      },
+      {
+        "name": "Sayad Check Credit Inquiry",
+        "description": "Official platform by the Central Bank of Iran for verifying the credit status of issued Sayad checks.",
+        "link": "https://www.cbi.ir/EstelamSayad/24090.aspx",
+        "pricing": "Free",
+        "signup_required": false
+      },
+      {
+        "name": "Check Information Inquiry",
+        "description": "Official platform by the Central Bank of Iran for verifying checks based on their information fields.",
+        "link": "https://www.cbi.ir/EstelamPichak/22036.aspx",
+        "pricing": "Free",
         "signup_required": false
       }
     ],
@@ -151,6 +193,20 @@
         "description": "Provides urban property information, ownership records, and municipal real estate data.",
         "link": "https://www.tehran.ir",
         "pricing": "free",
+        "signup_required": false
+      },
+      {
+        "name": "Property Document Verification",
+        "description": "Official platform for verifying the authenticity of property ownership documents in Iran.",
+        "link": "https://my.ssaa.ir/portal/estate/originality-document/",
+        "pricing": "Free",
+        "signup_required": false
+      },
+      {
+        "name": "Postal Code Verification",
+        "description": "Official platform by Iran Post for verifying the validity of postal codes.",
+        "link": "https://gnaf.post.ir/portal",
+        "pricing": "Free",
         "signup_required": false
       }
     ]
