@@ -111,6 +111,20 @@
         "link": "https://rc.majlis.ir",
         "pricing": "free",
         "signup_required": false
+      },
+      {
+        "name": "LifeWebCo",
+        "description": "Platform for social listening, monitoring online mentions, trends, and social media analytics.",
+        "link": "https://lifewebco.com/",
+        "pricing": "paid",
+        "signup_required": true
+      },
+      {
+        "name": "Dataak",
+        "description": "Platform for social listening, monitoring online mentions, trends, and social media analytics.",
+        "link": "https://dataak.com/",
+        "pricing": "paid",
+        "signup_required": true
       }
     ],
     "research": [
@@ -162,7 +176,7 @@
         "name": "Rasmio",
         "description": "An open‑data business‑registry platform in Iran that provides company verification, official gazette‑based data, and business‑relationship analytics.",
         "link": "https://rasmio.com/",
-        "pricing": "free / Premium",
+        "pricing": "free / paid",
         "signup_required": true
       },
       {
@@ -185,7 +199,7 @@
         "name": "Rasmio",
         "description": "Open-data business platform offering company verification, official gazette-based data, and business relationship analytics.",
         "link": "https://rasmio.com",
-        "pricing": "free / Premium",
+        "pricing": "free / paid",
         "signup_required": true
       },
       {
