@@ -86,42 +86,42 @@
         "name": "Blocked Account Funds Inquiry",
         "description": "Official platform by the Central Bank of Iran for checking blocked amounts in accounts due to bounced checks.",
         "link": "https://cbi.ir/InquiryMahCheque/23586.aspx",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Sajaar Platform",
         "description": "Platform providing information on licenses for contractors, consultants, IT, industrial and non-industrial construction, and technical and executive permits. It offers details on license grades, fields of activity, and key information about contractors and their operating conditions.",
         "link": "https://sajar.mporg.ir",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Knowledge-Based Companies Inquiry",
         "description": "Official platform for verifying the status of companies registered as knowledge-based in Iran.",
         "link": "https://pub.daneshbonyan.ir/dashboard",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Contract Information System",
         "description": "Platform providing data on contracts across Iran, including details of government and private contracts.",
         "link": "https://cdb.mporg.ir/AdvancedSearchPage",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Iran Customs EPL",
         "description": "Official platform by Iran Customs providing comprehensive data on Iran's international trade, including detailed information categorized by HS codes (Harmonized Commodity Description and Coding System).",
         "link": "https://epl.irica.ir/TscViewPage?0",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       },
       {
         "name": "Warranty Authenticity Inquiry",
         "description": "Official platform for verifying the authenticity of product warranties in Iran.",
         "link": "https://irangs.ir/Home/index",
-        "pricing": "Free",
+        "pricing": "free",
         "signup_required": false
       }
     ],
