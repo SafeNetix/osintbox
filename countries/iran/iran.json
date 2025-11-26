@@ -16,6 +16,13 @@
         "link": "https://iranopendata.org/en/",
         "pricing": "free",
         "signup_required": false
+      },
+      {
+        "name": "ISaar Verification Service",
+        "description": "Official platform for verifying members registered with Iran's Foundation of Martyrs and Veterans Affairs.",
+        "link": "https://my.isaar.ir/service/%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%20%D8%A7%DB%8C%D8%AB%D8%A7%D8%B1%DA%AF%D8%B1%20%DB%8C%D8%A7%20%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87",
+        "pricing": "Free",
+        "signup_required": true
       }
     ],
     "financial": [
