@@ -123,6 +123,13 @@
         "link": "https://irangs.ir/Home/index",
         "pricing": "free",
         "signup_required": false
+      },
+      {
+        "name": "Iran Government Electronic Procurement (SETAD FE)",
+        "description": "Official platform providing detailed information on government transactions in Iran, including contract conditions, participating companies, and involved amounts.",
+        "link": "https://fe.setadiran.ir/centralboard/#/central-board-0",
+        "pricing": "free",
+        "signup_required": false
       }
     ],
     "society": [
