@@ -235,3 +235,21 @@ function resizeMap() {
 
 window.addEventListener("resize", resizeMap);
 window.addEventListener("orientationchange", resizeMap);
+
+document.getElementById("openPopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "flex";
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("popup").addEventListener("click", function (e) {
+  if (e.target === this) {
+    this.style.display = "none";
+  }
+});
+
+document.querySelectorAll(".locked-img").forEach((img) => {
+  img.addEventListener("dragstart", (e) => e.preventDefault());
+});
