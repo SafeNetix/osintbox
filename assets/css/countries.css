@@ -82,7 +82,7 @@ footer,
   flex-direction: column;
   gap: 15px;
   background: rgb(10, 20, 40);
-  padding: 2rem 3rem 2rem 2rem;
+  padding: 2rem;
   border-radius: 15px;
   max-width: 400px;
   width: 80%;
@@ -542,7 +542,7 @@ p {
 
   #popupContent p,
   b {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   #footer {
