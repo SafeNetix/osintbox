@@ -151,6 +151,10 @@ b {
   font-size: 15px;
   text-align: left;
   line-height: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .breadcrumb {
